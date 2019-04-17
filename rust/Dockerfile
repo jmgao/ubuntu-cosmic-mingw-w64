@@ -1,7 +1,7 @@
 FROM jmgao/ubuntu-cosmic-mingw-w64:latest
 MAINTAINER Josh Gao
 
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain nightly-2019-04-16
 
 ENV PATH "$PATH:/root/.cargo/bin"
 
